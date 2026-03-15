@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Cooffe-Punto Grano</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="Contactos.html">Contacto</a></li>
+        </ul>
+        <input type="text" placeholder="Buscar..." class="search">
+    </nav>
+</header>
+
+<main>
+    <h1>Bienvenidos a nuestro Recetario</h1>
+    <p>Te ofrecemos ideas para endulzarte el día.</p>
+
+    <!-- Botón -->
+    <button class="btn">Ver recetas</button>
+
+    <!-- Tabla striped -->
+    <h2>Recetas Populares</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Dificultad</th>
+        </tr>
+        <tr>
+            <td>Avocado Toast "Premium"</td>
+            <td>Media</td>
+        </tr>
+        <tr>
+            <td>Sandwich de Pollo Pesto</td>
+            <td>Fácil</td>
+        </tr>
+
+        <tr>
+            <td>Quiche de Espinacas y Gruyère</td>
+            <td>Dificil</td>
+        </tr>
+    </table>
+</main>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
